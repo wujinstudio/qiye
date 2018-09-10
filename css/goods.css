@@ -92,6 +92,36 @@ header h3{
     line-height: 32px;
     margin: 0;
 }
+main{
+    width: 100%;
+    height: 860px;
+    /*position: relative;*/
+    overflow: hidden;
+}
+main .box{
+    width: 100%;
+    height: 860px;
+
+    /*z-index: 999;*/
+    padding:0 100px;
+    position: relative;
+}
+main .box .bo{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+main .box .bo.one{
+    display: none;
+    position: absolute;
+    /*top:0;*/
+    /*left: 0;*/
+}
+main .box .abcd{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 main ul{
     margin-top: 50px;
 }
@@ -108,7 +138,6 @@ main li h3{
     text-align: center;
     font-size: 18px;
     color: #555;
-    cursor: pointer;
 }
 main li .time{
     text-align: center;
@@ -124,18 +153,12 @@ main li .descrition{
 main span{
     font-size: 18px;
     margin-right: 15px;
-    color:#00A1DF;
+    color:#555;
     cursor: pointer;
+    /*margin-top: 900px;*/
 }
-main span:hover{
+main .active{
     color:#08c;
-}
-main .onm{
-    color:#333;
-    cursor: pointer;
-}
-main .onm:hover{
-    color:#00A1DF;
 }
 /*main li:nth-child(2){*/
     /*margin:10px 0;*/
@@ -229,6 +252,7 @@ dl .linking:hover{
     }
     main .container{
         padding:0 100px;
+        position: relative;
     }
     footer .container{
         padding: 0 90px;

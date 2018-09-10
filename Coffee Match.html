@@ -61,10 +61,10 @@
                     <i class="iconfont icon-facebook"></i><i class="iconfont icon-instagram"></i><i class="iconfont icon-twitter"></i>
                 </div>
                 <hr>
-                <span>也在</span><span class="linking">频道</span>
-                <img src="images/vat0nqlp4lvycrmyozim.jpg" alt="" class="pic">
-                <h5>咖啡爱好者的词典</h5>
-                <div class="two">我们的拔罐语言系列的第一部分</div>
+                <span>也在</span><span class="linking">顾客评价</span>
+                <img src="images/1.jpg" alt="" class="pic">
+                <h5> 蓝瓶咖啡和TCHO</h5>
+                <div class="two">这款巧克力旨在让我们的咖啡唱歌。</div>
                 <div class="three">由蓝瓶工作人员</div>
             </li>
         </ul>
@@ -167,3 +167,16 @@
 <!--ending-->
 </body>
 </html>
+<script>
+    let ProTips=document.querySelector("main h5");
+    console.log(ProTips);
+
+    ProTips.onclick=function () {
+        window.open("chocolate.html",'_self');
+    };
+    let s=document.querySelector("main li .linking");
+    s.onclick=function () {
+        window.open("goods.html",'_self');
+    }
+
+</script>

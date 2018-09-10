@@ -77,77 +77,79 @@ nav a.text:hover{
     color:#00A1DF;
     text-decoration: none;
 }
-header{
-    width: 100%;
-    background-image: url("../images/bg-img-coffee-90aa3c6d0539054d34433500185ea9edce04b40d2861510041e6a04b928a1561.jpg");
-    background-size: 100% 150px;
-    background-repeat: no-repeat;
-    padding-top: 150px;
-}
 header h1{
-    font-size: 32px;
+    font-size: 24px;
+    color:#333;
+    text-align: center;
+    line-height: 32px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+header h3{
+    font-size: 16px;
     color:#555;
-    box-sizing: border-box;
     text-align: center;
+    line-height: 32px;
+    margin: 0;
 }
-.box1{
+main .container{
+    padding:0 30px;
+}
+main ul{
+    margin-top: 50px;
+}
+main li{
+    width:100%;
+    overflow: hidden;
+}
+main li .frist{
+    margin: 68px auto;
+}
+main li img{
+    width:100%;
+    height: 100%;
+    margin-top: 10px;
+}
+main li .secound{
+    height:60%;
+    width: 80%;
+    margin-top: 10px;
+}
+main li p{
+    font-size: 16px;
+    color:#555;
+    margin-top: 20px;
+}
+main li:nth-child(2){
+    padding: 0 40px;
+}
+main li .linking{
+    color:#00A1DF;
+    cursor: pointer;
+}
+main li .linking:hover{
+    color:#08c;
+}
+main li .pic{
+    display: block;
     width: 100%;
-    background-image: url("../images/bg-img-pouring-1388916512f1d5ee59ed7f28d191201dbc10a757739465a18f6c250e2fd91f24.jpg");
-    background-size: 100% 150px;
-    background-repeat: no-repeat;
-    padding-top: 150px;
-}
-.boxs{
-    font-size: 16px;
-}
-.boxs .container p:nth-child(1){
-    margin-top: 60px;
-}
-.boxs.container p{
-    font-size: 16px;
-}
-.boxs .container p:nth-child(3){
-    margin-bottom: 60px;
-    margin-top: 25px;
-}
-h1{
-    font-size: 14px;
-    text-align: center;
-    margin-top: 30px;
-    font-weight: bold;
-}
-.person p{
-    font-size: 18px;
-    color:#BABABA;
-    font-weight: 200;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-main{
-    background: #F3F3F3;
-    padding:56px 0;
-}
-main h2{
-    font-size: 18px;
-    font-weight: bold;
-}
-main p:nth-child(2){
+    height: 100%;
     margin-top: 20px;
 }
-main .container h3{
-    padding-top: 40px;
-    font-size: 18px;
-    font-weight: bold;
+main h5{
+    font-size: 16px;
+    color:#00A1DF;
+    cursor: pointer;
+    margin: 16px auto;
 }
-main p:nth-child(5){
-    margin-top: 30px;
+main h5:hover{
+    color:#08c;
 }
-.finsh{
-    font-size: 14px;
+main li .two{
+    font-size: 16px;
 }
-.finsh h2{
-    font-size: 18px;
-    font-weight: bold;
+main li .three{
+    font-size: 16px;
 }
 footer{
     border-top:1px solid #f4f4f4;
@@ -191,12 +193,10 @@ dl img{
 }
 dl .blog{
     font-weight: bold;
-    margin-top: 0;
 }
 dl .linking{
     color:#00A1DF;
     cursor: pointer;
-    margin-bottom: 0;
 }
 dl .linking:hover{
     color: #0088cc;
@@ -221,18 +221,8 @@ dl .linking:hover{
     color:#00A1DF;
 }
 @media screen and (min-width: 768px){
-    header{
-        background-size: cover;
-        height:260px;
-    }
-    header h1{
-        color: #fff;
-        margin-left: 80px;
-        text-align: left;
-    }
-    .box1{
-        height: 410px;
-        background-size: cover;
+    main .container{
+        padding:0 50px;
     }
 }
 @media screen and (min-width: 992px){
@@ -251,38 +241,17 @@ dl .linking:hover{
     nav i.icon-coffee.one{
         display: none;
     }
-
-    header{
-        background-size: cover;
-        height:260px;
-    }
-    header h1{
-        color: #fff;
-        margin-left: 80px;
-        text-align: left;
-    }
-    .box1{
-        height: 410px;
-        background-size: 100% 420px;
-    }
-    .container{
-        padding: 0 150px;
-        box-sizing: border-box;
-    }
-    h1{
-        padding: 0 150px;
-    }
-    .person p{
-        padding: 0 250px;
+    main .container{
+        padding:0 100px;
     }
     footer .container{
-             padding: 0 90px;
-         }
+        padding: 0 90px;
+    }
     .end .container{
-        padding: 0 80px;
+        padding: 0 100px;
     }
     .ending .container{
-        padding: 0 80px;
+        padding: 0 100px;
     }
     .ending{
         height: 70px;

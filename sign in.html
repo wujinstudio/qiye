@@ -45,14 +45,14 @@
 <main>
     <div class="container">
         <label for="">邮箱号</label>
-        <input type="email" placeholder="请输入您的邮箱号"><br>
+        <input type="text" placeholder="请输入您的邮箱号" class="username"><br>
         <label for="">密码</label>
-        <input type="password" placeholder="请输入您的密码"><br>
-        <a href="index.html"><div class="registe">
+        <input type="password" placeholder="请输入您的密码" class="password"><br>
+        <div class="registe">
             <div class="name">
                 登录
             </div>
-        </div></a>
+        </div>
         <div class="user">
             <span>没有账号？</span><span class="one"><a href="registe.html">注册</a></span>
         </div>
@@ -155,3 +155,31 @@
 <!--ending-->
 </body>
 </html>
+<script>
+    window .onload=function () {
+        //获取页面中的input元素
+        let user=document.getElementsByClassName("username")[0];
+        // console.log(user);
+        let pass=document.getElementsByClassName("password")[0];
+        // console.log(pass);
+        //获取提交按钮
+        let btn=document.querySelector("main .registe");
+        // console.log(btn);
+        // console.log(close);
+        btn.onclick=function(){
+            // alert("你正在点击提交按钮");
+            // alert(user.value);
+            // console.log(user.value,pass.value);
+            if(user.value==="'value'@qq.com" && pass.value==="number"){
+                alert("登录成功");
+                window.open("index.html");
+            }else{
+                alert("登陆失败，请重新登录");
+                user.value="";
+                pass.value="";
+                // window.open("error.html");
+            }
+        }
+
+    }
+</script>
