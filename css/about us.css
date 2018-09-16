@@ -300,7 +300,7 @@ dl .linking:hover{
         height: 410px;
         background-size: 100% 420px;
     }
-    .container{
+    .boxs .container{
         padding: 0 150px;
         box-sizing: border-box;
     }

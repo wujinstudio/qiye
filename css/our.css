@@ -239,6 +239,9 @@ dl .linking:hover{
     nav .container .title .daoh{
         display: none;
     }
+    nav .container{
+        padding: 0;
+    }
     .title i.icon-msnui-list-square{
         display:none;
     }
@@ -265,7 +268,7 @@ dl .linking:hover{
         height: 410px;
         background-size: 100% 420px;
     }
-    .container{
+    .boxs .container{
         padding: 0 150px;
         box-sizing: border-box;
     }
