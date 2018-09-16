@@ -15,6 +15,7 @@ nav{
     height: 77px;
     background-color: #fff;
     border-bottom: 1px solid #f4f4f4;
+    position: relative;
 }
 nav .con{
     width: 100%;
@@ -27,6 +28,7 @@ nav .title{
     flex-direction: row;
     justify-content: space-between;
     display: inline;
+
 }
 .title i.icon-msnui-list-square{
     text-align: center;
@@ -73,12 +75,40 @@ nav a.text{
     margin-right: 10px;
     display: none;
 }
+nav .container .title .daoh{
+    position: absolute;
+    left:0;
+    top: 77px;
+    z-index: 999;
+    width: 100%;
+    height: 0px;
+    text-align: center;
+    background: white;
+    /*display: none;*/
+    transition: 1s;
+    overflow: hidden;
+
+}
+nav .container .title .daoh li{
+    display: none;
+}
+nav .container .title .daoh li a{
+    height: 0px;
+    line-height: 50px;
+    color: #555;
+    font-size: 20px;
+    transition: 1s;
+    /*display: none;*/
+}
+nav .container .title .daoh li a:hover{
+    color: #00A1DF;
+}
 nav a.text:hover{
     color:#00A1DF;
     text-decoration: none;
 }
 header .banner{
-    height: 200px;
+    height: 250px;
     background-image: url("../images/banner.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -87,9 +117,12 @@ header .banner{
 }
 .banner img{
     display: none;
-    /*height:150px;*/
+    /*height:100%;*/
     /*width:100%;*/
     /*display: block;*/
+}
+.xsxs{
+    color:rgba(255,255,255,9);
 }
 header .box{
     height:100%;
@@ -233,7 +266,7 @@ main{
     margin-bottom: 50px;
 }
 main .container{
-    padding: 0 80px;
+    padding: 0 10px;
 }
 main .more{
     text-align: center;
@@ -368,6 +401,12 @@ height:140px;
     nav a.text{
         display:inline;
     }
+    nav .container .title .daoh{
+        display: none;
+    }
+    .ying{
+        overflow: hidden;
+    }
     .title i.icon-msnui-list-square{
         display:none;
     }
@@ -383,7 +422,7 @@ height:140px;
     header .banner{
         height: 460px;
         width:100%;
-        padding: 0 60px;
+        padding: 0 190px;
         background-image: none;
         position: relative;
     }
@@ -393,7 +432,7 @@ height:140px;
         width: 100%;
     }
     .goods .container{
-        padding: 0 80px;
+        padding: 0 100px;
     }
     .banner ul{
         position: absolute;
@@ -463,7 +502,7 @@ height:140px;
 @media screen and (min-width: 1200px){
     .box .one-box {
         padding: 40px 0;
-        margin: 0 80px;
+        margin: 0 190px;
     }
     .banner ul{
         position: absolute;

@@ -15,6 +15,7 @@ nav{
     height: 77px;
     background-color: #fff;
     border-bottom: 1px solid #f4f4f4;
+    position: relative;
 }
 nav .con{
     width: 100%;
@@ -27,6 +28,7 @@ nav .title{
     flex-direction: row;
     justify-content: space-between;
     display: inline;
+
 }
 .title i.icon-msnui-list-square{
     text-align: center;
@@ -73,6 +75,34 @@ nav a.text{
     margin-right: 10px;
     display: none;
 }
+nav .container .title .daoh{
+    position: absolute;
+    left:0;
+    top: 77px;
+    z-index: 999;
+    width: 100%;
+    height: 0px;
+    text-align: center;
+    background: white;
+    /*display: none;*/
+    transition: 1s;
+    overflow: hidden;
+
+}
+nav .container .title .daoh li{
+    display: none;
+}
+nav .container .title .daoh li a{
+    height: 0px;
+    line-height: 50px;
+    color: #555;
+    font-size: 20px;
+    transition: 1s;
+    /*display: none;*/
+}
+nav .container .title .daoh li a:hover{
+    color: #00A1DF;
+}
 nav a.text:hover{
     color:#00A1DF;
     text-decoration: none;
@@ -94,13 +124,13 @@ header h3{
 }
 main{
     width: 100%;
-    height: 860px;
+    height: 100%;
     /*position: relative;*/
     overflow: hidden;
 }
 main .box{
     width: 100%;
-    height: 860px;
+    height: 2560px;
 
     /*z-index: 999;*/
     padding:0 100px;
@@ -120,7 +150,7 @@ main .box .bo.one{
 main .box .abcd{
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 300px;
 }
 main ul{
     margin-top: 50px;
@@ -238,6 +268,9 @@ dl .linking:hover{
     nav a.text{
         display:inline;
     }
+    nav .container .title .daoh{
+        display: none;
+    }
     .title i.icon-msnui-list-square{
         display:none;
     }
@@ -249,6 +282,12 @@ dl .linking:hover{
     }
     nav i.icon-coffee.one{
         display: none;
+    }
+    main{
+        height: 100%;
+    }
+    main .box{
+        height: 860px;
     }
     main .container{
         padding:0 100px;
